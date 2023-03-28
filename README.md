@@ -5,28 +5,21 @@
   
 
   <h1>Sudhanshu Portfolio</h1>
-  <a href="https://live-code-collab-editor.vercel.app/"><strong>➥ Live Demo</strong></a>
+  <a href="https://sudhanshupatel.vercel.app/"><strong>➥ Live Demo</strong></a>
 
 </div>
 <br/>
 
 
-- Real time code sharing WebApp.
-- If you don't have Room id click on **new room** button It will create new RoomID and Enter your in and join.
-- Multiple Users can Join a Room.
-
-
-
-
 ## Screenshots of Project
 
-![Code Sync Preview Image](https://github.com/sudhanshu287/live-code-collab-editor/blob/main/client/src/assets/live-code-editor-preview1.png)
+![Portfolio Preview Image](https://github.com/sudhanshu287/sudhanshu-portfolio/blob/main/src/images/sudhanshu-portfolio-preview.png)
 
 
 
 ## Live Project
 
-[Click Here](https://live-code-collab-editor.vercel.app/)
+[Click Here](https://sudhanshupatel.vercel.app/)
 
 
 ## Created By :
@@ -53,7 +46,7 @@ Javascript,Node, HTML, CSS, React, Java ,C++
 
 **Client:** React
 
-**Server:** Node,Express
+
 
 
 

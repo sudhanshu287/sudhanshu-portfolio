@@ -4,6 +4,9 @@
     gap:2.5rem;
 }
 .portfolio__item{
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: 1fr;
     background: var(--color-bg-variant);
     padding: 1.2rem;
     border-radius: 2rem;
