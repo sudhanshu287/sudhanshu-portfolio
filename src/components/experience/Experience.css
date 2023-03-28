@@ -1,0 +1,98 @@
+.experience__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2rem;
+}
+
+.experience__container>div{
+    background: var(--color-bg-variant);
+    padding:2.4rem 5rem;
+    border-radius: 2rem;
+    border:2px solid transparent;
+    transition: var(--transition);
+}
+.experience__container > div:hover{
+    background: transparent;
+    border-color:var(--color-primary-variant);
+    cursor:default;
+}
+.experience__container > div h3{
+    text-align:center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+.experience__content{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    place-self: center;
+}
+
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.skills__list{
+    display: grid;   
+    grid-template-columns: repeat(4,1fr);
+    column-gap:2rem;
+    row-gap: 2rem;
+   margin-bottom: 2rem;
+}
+.skill__img{
+    width:80px;
+    height:80px;
+}
+.skill__center{
+    text-align: center;
+}
+
+
+/* -----------------------Media Query (Medium Devices)------------------------- */
+@media screen and (max-width:1024px){
+    .experience__container{
+        grid-template-columns: 1fr;
+    }
+    .experience__container>div{
+        width:80%;
+        padding:2rem;
+        margin:0 auto;
+    }
+    .experience__content{
+       padding:1rem; 
+    }
+
+}
+
+/* ----------------Media Query for (Small Devices)-------------- */
+@media screen and (max-width:600px){
+    .experience__container{
+        gap:1rem;
+    }
+    .experience__container>div{
+        width:100%;
+        padding:2rem 1rem;
+    }
+    .skills__list{
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 3rem;
+        row-gap: 2.5rem;
+    }
+    .skill__img{
+        width:50px;
+        height:50px;
+    }
+}
+
+@media screen and (min-width:280px) and (max-width:350px){
+    .skills__list{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .skill__img{
+        width:40px;
+        height:40px;
+    }
+}
+
+

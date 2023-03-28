@@ -1,0 +1,62 @@
+.qualification__container {
+  max-width: 450px;
+}
+
+.qualification__tabs {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.qualification__icon {
+  font-size: 2rem;
+  margin-right: 0.25rem;
+}
+.button--flex{
+    display: inline-flex;
+    align-items: center;
+}
+.qualification__tabs span{
+    font-size: 1.4rem;
+}
+.qualification__data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+.qualification__title {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.qualification__subtitle {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.qualification__percentage {
+  color: var(--percentage-color);
+}
+.qualification__percentage i {
+  font-size: 20px;
+  color: blueviolet;
+}
+.qualification__calender {
+  font-size: 0.8rem;
+  color: var(--color-primary);
+}
+.qualification__rounder {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--color-primary-variant);
+  border-radius: 50%;
+}
+.qualification__line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--color-primary-variant);
+  transform: translate(6px, -7px);
+}

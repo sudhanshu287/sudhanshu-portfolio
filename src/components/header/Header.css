@@ -1,0 +1,92 @@
+.darkMode__Button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    margin-bottom: 20px;
+}
+
+header{
+    height: calc(100vh);
+    overflow:hidden;
+}
+.header__container{
+    text-align:center;
+    height: 100%;
+    position: relative;
+}
+
+/* --------------------CTA--------*/
+.cta{
+    margin-top:1.5rem;
+    display:flex;
+    gap:1.2rem;
+    justify-content: center;
+}
+
+/* ----------Header Social----------- */
+.header__socials{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+    position: absolute;
+    left: 0;
+    bottom:3rem;
+}
+.header__socials::after{
+    content:"";
+    width:1px;
+    height:2rem;
+    background: var(--color-primary);
+}
+
+/* ---------------------ME------------- */
+.myProfileImg{
+    background: linear-gradient(var(--color-primary),transparent);
+    width:22rem;
+    height: 29rem;
+    position:absolute;
+    left:calc(50% - 11rem);
+    margin-top:2rem;
+    border-radius:12rem 12rem 0 0;
+    overflow: hidden;
+    padding:1rem 1rem 1rem 1rem;
+
+}
+.scroll_down{
+    position: absolute;
+    right:-2.3rem;
+    bottom:6rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+/* -----------------------Media Query (Medium Devices)------------------------- */
+@media screen and (max-width:1024px){
+    header{
+        height:100vh;
+    }
+}
+
+/* ----------------Media Query for (Small Devices)-------------- */
+@media screen and (max-width:600px){
+    header{
+        height:100vh;
+        padding-top: .5rem;
+    }
+    
+    .header__socials,.scroll_down{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
