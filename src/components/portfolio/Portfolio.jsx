@@ -31,7 +31,7 @@ const data = [
       "Multiple Users can Join a Room.",
     ],
     github: "https://github.com/sudhanshu287/live-code-collab-editor",
-    demo: "https://live-code-collab-editor.vercel.app/",
+    demo: "https://c2c-delicate-druid.netlify.app/",
   },
   {
     id: 3,
@@ -99,7 +99,7 @@ const Portfolio = () => {
                   href={github}
                   className="btn"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener"
                 >
                   GitHub
                 </a>
