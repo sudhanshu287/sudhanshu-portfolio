@@ -31,7 +31,7 @@ const data = [
       "Multiple Users can Join a Room.",
     ],
     github: "https://github.com/sudhanshu287/live-code-collab-editor",
-    demo: "https://c2c-delicate-druid.netlify.app/",
+    demo: "https://live-code-collab-editor.vercel.app/",
   },
   {
     id: 3,
