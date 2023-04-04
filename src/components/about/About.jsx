@@ -1,6 +1,6 @@
-import React from 'react';
-import ME from '../../images/sdn.png';
-import './About.css';
+import React from "react";
+import ME from "../../images/sdn.png";
+import "./About.css";
 const About = () => {
   return (
     <section id="about">
@@ -13,16 +13,19 @@ const About = () => {
           </div>
         </div>
         <div className="about__content">
-          
           <p>
-          I am a Frontend Web Developer.
-I have a basic knowledge of data structure and algorithms. As a frontend web developer, I have an experience in JavaScript programming, HTML, CSS, and frameworks like Bootstrap and React.
+            I am a Frontend Web Developer. I have a basic knowledge of data
+            structure and algorithms. As a frontend web developer, I have an
+            experience in JavaScript programming, HTML, CSS, and libraries like
+            Bootstrap and React.
           </p>
-          <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+          <a href="#contact" className="btn btn-primary">
+            Let's Talk
+          </a>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default About;
