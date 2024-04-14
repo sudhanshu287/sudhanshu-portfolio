@@ -16,6 +16,7 @@
 .button--flex{
     display: inline-flex;
     align-items: center;
+    cursor: pointer;
 }
 .qualification__tabs span{
     font-size: 1.4rem;

@@ -1,20 +1,69 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Qualification.css";
 import { FaGraduationCap } from "react-icons/fa";
 import { BsFillCalendarCheckFill } from "react-icons/bs";
+import { MdOutlineWork } from "react-icons/md";
 const Qualification = () => {
+  const [tab,setTab]=useState("work");
   return (
     <section className="qualification">
       <h5>My personal journey</h5>
       <h2>Qualification</h2>
       <div className="qualification__container container">
         <div className="qualification__tabs">
-          <div className="button--flex">
+          <div className="button--flex" onClick={()=>setTab('work')}>
+            <MdOutlineWork className="qualification__icon"/> &nbsp; 
+            <span>Work</span>
+          </div>
+          <div className="button--flex" onClick={()=>setTab('education')}>
             <FaGraduationCap className="qualification__icon"/> &nbsp; 
             <span>Education</span>
           </div>
         </div>
-        <div className="qualification__sections">
+        {tab==='work'&&<div className="qualification__sections">
+          {/* <!-- qualification content  --> */}
+          <div>
+            {/* <!-- work 1 --> */}
+            <div className="qualification__data">
+              <div>
+                <h3 className="qualification__title">
+                 Software Engineer
+                </h3>
+                <h4
+                  className="qualification__subtitle"
+                  style={{ fontStyle: "italic" }}
+                >
+                  Nucleus Software - Noida
+                </h4>
+                <span className="qualification__subtitle">
+                  
+                </span>
+                
+                <div >
+                  <BsFillCalendarCheckFill className="qualification__calender" />
+                  <span> &nbsp;July 2023 - Jan 2024</span>
+                </div>
+              </div>
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+            </div>
+            {/* <!-- work 2 --> */}
+            <div className="qualification__data">
+              <div></div>
+              <div>
+                <span className="qualification__rounder"></span>
+                {/* <span className="qualification__line"></span> */}
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>}
+
+
+        {tab==='education'&&<div className="qualification__sections">
           {/* <!-- qualification content  --> */}
           <div>
             {/* <!-- qualification 1 --> */}
@@ -94,7 +143,7 @@ const Qualification = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div>}
       </div>
     </section>
   );
