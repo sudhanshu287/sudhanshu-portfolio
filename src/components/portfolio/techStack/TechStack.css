@@ -1,0 +1,12 @@
+.tech__stack__list{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap:.5rem;
+}
+.tech__name{
+    border: 1px dashed var(--color-white);
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    font-weight: 400;
+}

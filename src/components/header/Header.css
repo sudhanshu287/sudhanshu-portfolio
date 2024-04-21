@@ -44,7 +44,7 @@ header{
 /* ---------------------ME------------- */
 .myProfileImg{
     background: linear-gradient(var(--color-primary),transparent);
-    width:20rem;
+    width:22rem;
     height: 22rem;
     position:absolute;
     left:calc(50% - 11rem);
