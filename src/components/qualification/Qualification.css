@@ -7,6 +7,7 @@
   justify-content: space-evenly;
   align-items: center;
   margin-bottom: 2rem;
+  /* border-bottom: 2px solid black; */
 }
 
 .qualification__icon {
@@ -20,6 +21,10 @@
 }
 .qualification__tabs span{
     font-size: 1.4rem;
+    
+}
+.qualification__tabs span.active{
+  color:var(--color-primary-variant);
 }
 .qualification__data {
   display: grid;

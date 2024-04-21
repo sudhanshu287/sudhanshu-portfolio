@@ -10,81 +10,146 @@ import ScssImg from "../../images/SkillsImages/sass.png";
 import VsCodeImg from "../../images/SkillsImages/vs-code.png";
 import GitImg from "../../images/SkillsImages/git.png";
 import GitHubImg from "../../images/SkillsImages/github.png";
-
+import { motion } from "framer-motion";
 const Experience = () => {
+  const frontendSkills = [
+    {
+      skillImage: JavascriptImg,
+      skillTitle: "JavaScript",
+    },
+    {
+      skillImage: ReactImg,
+      skillTitle: "React.Js",
+    },
+    {
+      skillImage: HtmlImg,
+      skillTitle: "HTML5",
+    },
+    {
+      skillImage: CssImg,
+      skillTitle: "CSS3",
+    },
+    {
+      skillImage: BootstrapImg,
+      skillTitle: "Bootstrap",
+    },
+    {
+      skillImage: ScssImg,
+      skillTitle: "SASS",
+    },
+  ];
+  const backendSkills=[
+    
+      {
+        skillImage: JavaImg,
+        skillTitle: "Java",
+      },
+      {
+        skillImage: JavaImg,
+        skillTitle: "SpringBoot",
+      },
+      {
+        skillImage: JavaImg,
+        skillTitle: "Hibernate",
+      },
+      {
+        skillImage: JavaImg,
+        skillTitle: "OracleDB",
+      },
+
+    
+  ]
+  const others=[
+    {
+      skillImage: VsCodeImg,
+      skillTitle: "VS Code",
+    },
+    {
+      skillImage: GitImg,
+      skillTitle: "Git",
+    },
+    {
+      skillImage: GitHubImg,
+      skillTitle: "GitHub",
+    },
+  ]
   return (
     <section id="experience">
       <h5>What Skills I Have</h5>
       <h2>Technical Skills</h2>
       <div className="container experience__container">
-        <div className="experience__frontend">
-          <h3>Programming</h3>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+          className="experience__frontend"
+        >
+          <h3>Frontend</h3>
           <div className="experience__content">
             <article className="skills">
               <div className="skills__list">
-                <div className="skill__img">
-                  <img src={JavaImg} alt="" />
-                  <div className="skill__center">JAVA</div>
-                </div>
-
-                <div className="skill__img">
-                  <img src={JavascriptImg} alt="" />
-                  <div className="skill__center">JavaScript</div>
-                </div>
-
-                <div className="skill__img">
-                  <img src={ReactImg} alt="" />
-                  <div className="skill__center">React</div>
-                </div>
-
-                <div className="skill__img">
-                  <img src={BootstrapImg} alt="" />
-                  <div className="skill__center">BootStrap</div>
-                </div>
-
-                <div className="skill__img">
-                  <img src={HtmlImg} alt="" />
-                  <div className="skill__center">HTML</div>
-                </div>
-
-                <div className="skill__img">
-                  <img src={CssImg} alt="" />
-                  <div className="skill__center">CSS</div>
-                </div>
-
-                <div className="skill__img">
-                  <img src={ScssImg} alt="" />
-                  <div className="skill__center">SASS</div>
-                </div>
+                {frontendSkills.map((item) => 
+                  <div className="skill__box">
+                    <img src={item.skillImage} alt="" />
+                    <span className="skill__center">{item.skillTitle}</span>
+                  </div>
+                )}
               </div>
             </article>
           </div>
-        </div>
-        <div className="experience__backend">
-          <h3>Tools</h3>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+          className="experience__backend"
+        >
+          <h3>Backend</h3>
           <div className="experience__content">
-          <article className="skills">
-              <div className="skills__list">
-                <div className="skill__img">
-                  <img src={VsCodeImg} alt="" />
-                  <div className="skill__center">VsCode</div>
-                </div>
-
-                <div className="skill__img">
-                  <img src={GitImg} alt="" />
-                  <div className="skill__center">Git</div>
-                </div>
-
-                <div className="skill__img">
-                  <img src={GitHubImg} alt="" />
-                  <div className="skill__center">GitHub</div>
-                </div>
-
-                
+            <article className="skills">
+            <div className="skills__list">
+                {backendSkills.map((item) => 
+                  <div className="skill__box">
+                    <img src={item.skillImage} alt="" />
+                    <span className="skill__center">{item.skillTitle}</span>
+                  </div>
+                )}
               </div>
             </article>
           </div>
-        </div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.3,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+          className="experience__others"
+        >
+          <h3>Others</h3>
+          <div className="experience__content">
+            <article className="skills">
+            <div className="skills__list">
+                {others.map((item) => 
+                  <div className="skill__box">
+                    <img src={item.skillImage} alt="" />
+                    <span className="skill__center">{item.skillTitle}</span>
+                  </div>
+                )}
+              </div>
+            </article>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

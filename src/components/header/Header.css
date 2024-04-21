@@ -44,14 +44,14 @@ header{
 /* ---------------------ME------------- */
 .myProfileImg{
     background: linear-gradient(var(--color-primary),transparent);
-    width:22rem;
-    height: 29rem;
+    width:20rem;
+    height: 22rem;
     position:absolute;
     left:calc(50% - 11rem);
     margin-top:2rem;
     border-radius:12rem 12rem 0 0;
     overflow: hidden;
-    padding:1rem 1rem 1rem 1rem;
+    padding:1rem;
 
 }
 .scroll_down{

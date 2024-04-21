@@ -13,11 +13,11 @@ const Qualification = () => {
         <div className="qualification__tabs">
           <div className="button--flex" onClick={()=>setTab('work')}>
             <MdOutlineWork className="qualification__icon"/> &nbsp; 
-            <span>Work</span>
+            <span className={`${tab==='work' && 'active'}`}>Work</span>
           </div>
           <div className="button--flex" onClick={()=>setTab('education')}>
             <FaGraduationCap className="qualification__icon"/> &nbsp; 
-            <span>Education</span>
+            <span className={`${tab==='education' && 'active'}`}>Education</span>
           </div>
         </div>
         {tab==='work'&&<div className="qualification__sections">

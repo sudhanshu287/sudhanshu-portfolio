@@ -21,8 +21,8 @@ function App() {
         <Experience />
         <Qualification/>
         <Portfolio />
-        <Testimonials />
         <Services />
+        <Testimonials />
         <Contact />
         <Footer />
 

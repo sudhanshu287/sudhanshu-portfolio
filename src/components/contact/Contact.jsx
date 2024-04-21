@@ -1,6 +1,5 @@
 import React from 'react'
 import './Contact.css';
-import {FaFacebookMessenger} from 'react-icons/fa';
 import {MdOutlineEmail} from 'react-icons/md';
 import {BsWhatsapp} from 'react-icons/bs';
 
@@ -15,14 +14,8 @@ const Contact = () => {
           <article className="contact__option">
           <MdOutlineEmail className='contact__option-icon'/>
               <h4>Email</h4>
-              <h5>contact2sudhanshup@gmail.com</h5>
-              <a href="mailto:contact2sudhanshup@gmail.com" target="_blank" rel='noopener'>Send a message</a>
-          </article>
-          <article className="contact__option">
-            <FaFacebookMessenger className='contact__option-icon'/>
-              <h4>Messenger</h4>
-              <h5>sudhanshu287</h5>
-              <a href="https://facebook.com/sudhanshu287/" target="_blank" rel='noopener'>Send a message</a>
+              <h5>sdn.patel.287@gmail.com</h5>
+              <a href="mailto:sdn.patel.287@gmail.com" target="_blank" rel='noopener'>Send a message</a>
           </article>
           <article className="contact__option">
             <BsWhatsapp className='contact__option-icon'/>
