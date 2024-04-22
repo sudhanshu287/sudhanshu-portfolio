@@ -2,8 +2,6 @@ import React from "react";
 import { ReactComponent as Sun } from "./Sun.svg";
 import { ReactComponent as Moon } from "./Moon.svg";
 import "./DarkMode.css";
-// import {BsFillSunFill} from 'react-icons/bs';
-// import {BsFillMoonFill} from 'react-icons/bs';
 
 const DarkMode = () => {
     const setDarkMode=()=>{
@@ -33,11 +31,9 @@ const DarkMode = () => {
                 id='darkmode-toggle'
                 onChange={toggleTheme}
             />
-            <label className='dark_mode_label' for='darkmode-toggle'>
+            <label className='dark_mode_label' htmlFor='darkmode-toggle'>
                 <Sun />
                 <Moon />
-                {/* <BsFillSunFill/>
-                <BsFillMoonFill/> */}
             </label>
         </div>
     );

@@ -92,8 +92,8 @@ const Experience = () => {
           <div className="experience__content">
             <article className="skills">
               <div className="skills__list">
-                {frontendSkills.map((item) => 
-                  <div className="skill__box">
+                {frontendSkills.map((item,index) => 
+                  <div key={index} className="skill__box">
                     <img src={item.skillImage} alt="" />
                     <span className="skill__center">{item.skillTitle}</span>
                   </div>
@@ -116,8 +116,8 @@ const Experience = () => {
           <div className="experience__content">
             <article className="skills">
             <div className="skills__list">
-                {backendSkills.map((item) => 
-                  <div className="skill__box">
+                {backendSkills.map((item,index) => 
+                  <div key={index} className="skill__box">
                     <img src={item.skillImage} alt="" />
                     <span className="skill__center">{item.skillTitle}</span>
                   </div>
@@ -140,8 +140,8 @@ const Experience = () => {
           <div className="experience__content">
             <article className="skills">
             <div className="skills__list">
-                {others.map((item) => 
-                  <div className="skill__box">
+                {others.map((item,index) => 
+                  <div key={index} className="skill__box">
                     <img src={item.skillImage} alt="" />
                     <span className="skill__center">{item.skillTitle}</span>
                   </div>

@@ -12,18 +12,32 @@ import Qualification from "./components/qualification/Qualification";
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Nav />
-      <About />
-      <Experience />
-      <Qualification />
-      <Portfolio />
-      <Services />
-      <Testimonials />
-      <Contact />
-      <Footer />
-    </div>
+    <>
+      <div>
+        <Header />
+        <Nav />
+        <About />
+        <Experience />
+        <Qualification />
+        <Portfolio />
+        <Services />
+        <Testimonials />
+        <Contact />
+        <Footer />
+      </div>
+        <ul className="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+    </>
   );
 }
 
