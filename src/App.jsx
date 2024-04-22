@@ -13,7 +13,6 @@ import Qualification from "./components/qualification/Qualification";
 function App() {
   return (
     <>
-      <div>
         <Header />
         <Nav />
         <About />
@@ -24,19 +23,6 @@ function App() {
         <Testimonials />
         <Contact />
         <Footer />
-      </div>
-        <ul className="circles">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
     </>
   );
 }

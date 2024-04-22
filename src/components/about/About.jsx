@@ -2,6 +2,8 @@ import React from "react";
 import ME from "../../images/sdn.png";
 import "./About.css";
 import { motion } from "framer-motion";
+import { FaAward } from "react-icons/fa";
+import { FaRegUser } from "react-icons/fa";
 const About = () => {
   return (
     <section id="about">
@@ -32,6 +34,18 @@ const About = () => {
           }}
           className="about__content"
         >
+          <div className="about__cards">
+            <article className="about__card">
+              <FaAward className="about__icon" />
+              <h5>Experience</h5>
+              <small>6+ months</small>
+            </article>
+            <article className="about__card">
+            <FaRegUser className="about__icon" />
+              <h5>Projects</h5>
+              <small>10+ projects</small>
+            </article>
+          </div>
           <p>
             I am a Frontend Web Developer. I have a basic knowledge of data
             structure and algorithms. As a frontend web developer, I have an
