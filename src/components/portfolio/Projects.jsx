@@ -1,5 +1,5 @@
 import React from "react";
-import "./Portfolio.css";
+import "./Projects.css";
 import MovixImg from "../../images/PortfolioImages/movix.png";
 import CodeEditorImg from "../../images/PortfolioImages/live-code-editor.png";
 import WeatherLensImg from "../../images/PortfolioImages/weather-lens.png";
@@ -13,7 +13,7 @@ const data = [
     image: '',
     title: "Authentication Service",
     techStack: ["Spring Boot", "MySql","Spring Security","JWT"],
-    github: "https://github.com/sudhanshu287/movix",
+    github: "https://github.com/sudhanshu287/auth-service-spring-boot",
     demo: "",
   },
   {
@@ -69,7 +69,7 @@ const Portfolio = () => {
   return (
     <section id="portfolio">
       <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      <h2>Projects</h2>
       <div className="container portfolio__container">
         {data.map(({ id, image, title, techStack, github, demo }) => {
           return (
