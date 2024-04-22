@@ -10,6 +10,9 @@ import ScssImg from "../../images/SkillsImages/sass.png";
 import VsCodeImg from "../../images/SkillsImages/vs-code.png";
 import GitImg from "../../images/SkillsImages/git.png";
 import GitHubImg from "../../images/SkillsImages/github.png";
+import SpringBoot from '../../images/SkillsImages/springboot.png'
+import OracleDB from '../../images/SkillsImages/oracledb.png'
+import Hibernate from '../../images/SkillsImages/hibernate.svg'
 import { motion } from "framer-motion";
 const Experience = () => {
   const frontendSkills = [
@@ -45,15 +48,15 @@ const Experience = () => {
         skillTitle: "Java",
       },
       {
-        skillImage: JavaImg,
+        skillImage: SpringBoot,
         skillTitle: "SpringBoot",
       },
       {
-        skillImage: JavaImg,
+        skillImage: Hibernate,
         skillTitle: "Hibernate",
       },
       {
-        skillImage: JavaImg,
+        skillImage: OracleDB,
         skillTitle: "OracleDB",
       },
 

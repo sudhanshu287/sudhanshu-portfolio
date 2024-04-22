@@ -10,6 +10,14 @@ import { motion } from "framer-motion";
 const data = [
   {
     id: 1,
+    image: '',
+    title: "Authentication Service",
+    techStack: ["Spring Boot", "MySql","Spring Security","JWT"],
+    github: "https://github.com/sudhanshu287/movix",
+    demo: "",
+  },
+  {
+    id: 2,
     image: MovixImg,
     title: "Movix ( Webapp for Movies and TV shows)",
     techStack: ["React", "HTML", "SASS"],
@@ -17,7 +25,7 @@ const data = [
     demo: "https://movix-one.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     image: CodeEditorImg,
     title: "Live Code Collab Editor (Code Sync)",
     techStack: ["React", "Node.js", "HTML", "CSS"],
@@ -25,7 +33,7 @@ const data = [
     demo: "https://live-code-collab-editor.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     image: WeatherLensImg,
     title: "Weather Lens",
     techStack: ["React", "HTML", "CSS"],
@@ -33,7 +41,7 @@ const data = [
     demo: "https://weather-lens-v2.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     image: LoslesVPNImg,
     title: "LoslesVPN Landing Webpage.",
     techStack: ["Javascript", "HTML", "CSS"],
@@ -41,7 +49,7 @@ const data = [
     demo: "https://loslesvpn-landing-web-page.netlify.app/",
   },
   {
-    id: 5,
+    id: 6,
     image: BurgerHouseImg,
     title: `BurgerHouse Landing Webpage.`,
     techStack: ["React", "HTML", "CSS"],
@@ -77,7 +85,7 @@ const Portfolio = () => {
               className="portfolio__item"
             >
               <div className="portfolio__item-image">
-                <img src={image} alt="" />
+                <img src={image} alt="project-banner-img" />
               </div>
               <div>
                 <h3>{title}</h3>
