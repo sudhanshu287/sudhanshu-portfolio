@@ -6,6 +6,7 @@ import { BsInstagram } from "react-icons/bs";
 import { FiGithub } from "react-icons/fi";
 
 const Footer = () => {
+  const currentYear=new Date().getFullYear();
   return (
     <footer>
       <a href="#" className="footer__logo">
@@ -45,7 +46,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="footer__copyright">
-        <small>&copy; 2023 By Sudhanshu Patel. All rights reserved</small>
+        <small>&copy; {currentYear} By Sudhanshu Patel. All rights reserved</small>
       </div>
     </footer>
   );
